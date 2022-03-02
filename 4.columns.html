@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Learn Bootstrap</title>
+
+<style>
+    h3 {
+        color: rgb(255, 0, 0);
+        text-align: center;
+    }
+    .ver-align {
+         min-height: 10rem;
+    }
+    .row {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: aqua;
+    }
+    .row > div {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-weight: 700;
+    background-color: rgb(245, 188, 1);
+    border: 1px solid white;
+    text-align: center;
+    color: white;
+    }
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <h3>Ustunlar(colums)</h3>
+        <div class="row">
+            <div class="col">.col</div>
+            <div class="col">.col</div>
+            <div class="col">.col</div>
+            <div class="col">.col</di>
+        </div>
+    </div> 
+    
+    <!-- aligment  -->
+    <div class="container">
+        <h3>Alignment</h3>
+        <h4>Flexbox klasslari yordamida ustunlarni vertikal va gorizontal joylashuvini o'zgartirish mumkin</h4>
+        <!-- vercital joylashuv -->
+        <h4>Vertikal joylashtirish</h4>
+        <div class="row align-items-start ver-align">
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+        </div>
+
+        <div class="row align-items-center ver-align">
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+        </div>
+
+        <div class="row align-items-end ver-align">
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+        </div>
+
+        <div class="row ver-align">
+            <div class="col align-self-start">
+                1
+            </div>
+            <div class="col align-self-center">
+                2
+            </div>
+            <div class="col align-self-end">
+                3
+            </div>
+        </div>
+
+        <div class="row ver-align">
+            <div class="col">
+                .col
+            </div>
+            <div class="col align-self-center">
+                .col  align-self-center
+            </div>
+            <div class="col align-self-start">
+                .col  align-self-start
+            </div>
+        </div>
+
+        <!-- gorizantal joylashuv -->
+        <h4>Gorizantal joylashuv</h4>
+        <div class="row justify-content-start">
+            <div class="col-4">1</div>
+            <div class="col-4">2</div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-4">1</div>
+            <div class="col-4">2</div>
+        </div>
+
+        <div class="row justify-content-end">
+            <div class="col-4">1</div>
+            <div class="col-4">2</div>
+        </div>
+
+        <div class="row justify-content-around">
+            <div class="col-4">1</div>
+            <div class="col-4">2</div>
+        </div>
+
+        <div class="row justify-content-between">
+            <div class="col-4">1</div>
+            <div class="col-4">2</div>
+        </div>
+
+        <div class="row justify-content-evenly">
+            <div class="col-4">1</div>
+            <div class="col-4">2</div>
+        </div>
+
+    </div>
+
+    <!-- Column wrapping -->
+    <h3>Column wrapping</h3>
+    <div class="container">
+        <h4>If more than 12 columns are placed within a single row, each group of extra columns will,
+         as one unit, wrap onto a new line.</h4>
+         <div class="row">
+            <div class="col-9">.col-9</div>
+            <div class="col-4">.col-4<br>Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit.</div>
+            <div class="col-6">.col-6<br>Subsequent columns continue along the new line.</div>
+          </div>
+    </div>
+    <!-- column breaks -->
+    <div class="container">
+        <h3>Column breaks</h3>
+        <div class="row">
+          <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+          <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+      
+          <!-- Force next columns to break to new line -->
+          <div class="w-100">.w-100</div>
+      
+          <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+          <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+        </div>    
+    </div>
+
+    <!-- Reordering (qayta tartiblash) -->
+    <div class="container">
+        <h3>Reordering (qayta tartiblash)</h3>
+        <h4>Use .order- classes for controlling the visual order of your content. 
+            These classes are responsive, so you can set the order by breakpoint 
+            (e.g., .order-1.order-md-2). Includes support for 1 through 5 across all six grid tiers.
+        </h4>
+        <div class="row">
+            <div class="col">
+                First in DOM, no order applied
+            </div>
+            <div class="col order-5">
+                Second in DOM, with a larger order
+            </div>
+            <div class="col order-1">
+                Third in DOM, with an order of 1
+            </div>
+        </div>
+    </div>
+
+    <!--Offsetting columns-->
+    <div class="container">
+        <h3>Offsetting columns</h3>
+        <div class="row">
+            <div class="col-md-4">.col-md-4</div>
+            <div class="col-md-4 offset-md-4">.col-md-4 <i>offset-md-4</i></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 offset-md-3">.col-md-3 <i>offset-md-3</i></div>
+            <div class="col-md-3 offset-md-3">.col-md-3 <i>offset-md-3</i></div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 offset-md-5">.col-md-6 <i>offset-md-5</i></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
+
