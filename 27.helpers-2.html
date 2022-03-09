@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Learn Bootstrap</title>
+
+    <style>
+
+        .container > div {
+            margin: 1rem 0;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <h3>Visually hidden, stretched links, text-truncation</h3><br><br>
+
+        <h4>Visually hidden</h4>
+        <div>
+            <h2 class="visually-hidden">Title for screen readers</h2>
+            <a class="visually-hidden-focusable" href="#content">Skip to main content</a>
+            <div class="visually-hidden-focusable">A container with a <a href="#">focusable element</a>.</div>
+        </div><br>
+      
+         
+        <h4>stretched links</h4>
+        <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="images">
+            <div class="card-body">
+              <h5 class="card-title">Card with stretched link</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+            </div>
+        </div>
+
+        <h4>text-truncation</h4>
+        <!-- Block level -->
+        <div class="row">
+            <div class="col-2 text-truncate">
+                Praeterea iter est quasdam res quas ex communi.
+            </div>
+        </div>
+  
+        <!-- Inline level -->
+        <div class="d-inline-block text-truncate" style="max-width: 150px;">
+                 Praeterea iter est quasdam res quas ex communi.
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

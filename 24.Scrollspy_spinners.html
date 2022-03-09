@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Learn Bootstrap</title>
+
+    <style>
+
+        .scrollspy-example {
+            position: relative;
+            height: 200px;
+            margin-top: 0.5rem;
+            overflow: auto;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <h3>scrollpy</h3>
+        <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading1">First</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading2">Second</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+                  <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+            <h4 id="scrollspyHeading1">First heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum totam dolor sequi modi quia sint maiores? Ratione facilis voluptatum ipsum repellat aperiam voluptates. Possimus aspernatur quae optio eveniet officiis saepe praesentium voluptate, fugit animi,
+                 similique natus exercitationem! Optio, blanditiis omnis magni temporibus illum ex facere.</p>
+            <h4 id="scrollspyHeading2">Second heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut voluptatem assumenda iusto odit ipsum tempora! Delectus commodi itaque laudantium quia veniam assumenda ipsum consequatur, eos architecto placeat harum quo quisquam quidem dolorum, enim maiores dignissimos omnis esse eveniet tempora ducimus nihil! Iste, a
+                periam rem. Explicabo eum esse amet obcaecati doloribus corporis consequatur.</p>
+            <h4 id="scrollspyHeading3">Third heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit tempore voluptatibus veritatis sapiente voluptate sit? Error cum, dolor consequuntur ducimus excepturi quisquam perferendis vitae culpa esse dolorem dolorum veritatis, ipsam aperiam? Similique recusandae sapiente hic magnam voluptatum blanditiis, natus dicta, ullam beatae cupiditate laudantium doloribus 
+                fugiat dolore iusto porro possimus est laboriosam illum.</p>
+            <h4 id="scrollspyHeading4">Fourth heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, qui omnis nisi repudiandae libero explicabo, aut adipisci itaque debitis modi quod sapiente expedita autem animi? Optio omnis tempore nam, tenetur architecto temporibus eligendi suscipit fugiat. Explicabo, iste necessitatibus aut, eos dolore officiis nisi excepturi facilis nobis vitae neque eligendi pariatur natus maiores laudantium quibusda
+                m possimus alias sed tempore voluptas unde?</p>
+            <h4 id="scrollspyHeading5">Fifth heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dignissimos voluptate nemo mollitia consequatur itaque a 
+                in laboriosam cumque debitis harum aut, sed eum eius porro pariatur quod nisi rerum.</p>
+          </div><br>
+
+          <h3>spinners</h3><br>
+          <div class="spinner-border" role="status"> </div>
+            
+         
+          <br>
+          <div class="spinner-border text-primary" role="status">
+            <div class="visually-hidden">Loading...</div><!-- imkoniyati cheklanganlar uchun  -->
+          </div>
+          <div class="spinner-border text-secondary" role="status">
+            <div class="visually-hidden">Loading...</div><!-- imkoniyati cheklanganlar uchun  -->
+          </div>
+          <div class="spinner-border text-success" role="status">
+            <div class="visually-hidden">Loading...</div><!-- imkoniyati cheklanganlar uchun  -->
+          </div>
+          <div class="spinner-border text-danger" role="status">
+            <div class="visually-hidden">Loading...</div><!-- imkoniyati cheklanganlar uchun  -->
+          </div>
+          <div class="spinner-border text-warning" role="status">
+            <div class="visually-hidden">Loading...</div><!-- imkoniyati cheklanganlar uchun  -->
+          </div>
+          <div class="spinner-border text-info" role="status">
+            <div class="visually-hidden">Loading...</div><!-- imkoniyati cheklanganlar uchun  -->
+          </div>
+          <div class="spinner-border text-light" role="status">
+            <div class="visually-hidden">Loading...</div><!-- imkoniyati cheklanganlar uchun  -->
+          </div>
+          <div class="spinner-border text-dark" role="status">
+            <div class="visually-hidden">Loading...</div><!-- imkoniyati cheklanganlar uchun  -->
+          </div><br>
+          <div class="spinner-grow text-primary" role="status">
+            <div class="visually-hidden">Loading...</div>
+          </div>
+          <div class="spinner-grow text-secondary" role="status">
+            <div class="visually-hidden">Loading...</div>
+          </div>
+          <div class="spinner-grow text-success" role="status">
+            <div class="visually-hidden">Loading...</div>
+          </div>
+          <div class="spinner-grow text-danger" role="status">
+            <div class="visually-hidden">Loading...</div>
+          </div>
+          <div class="spinner-grow text-warning" role="status">
+            <div class="visually-hidden">Loading...</div>
+          </div>
+          <div class="spinner-grow text-info" role="status">
+            <div class="visually-hidden">Loading...</div>
+          </div>
+          <div class="spinner-grow text-light" role="status">
+            <div class="visually-hidden">Loading...</div>
+          </div>
+          <div class="spinner-grow text-dark" role="status">
+            <div class="visually-hidden">Loading...</div>
+          </div><br>
+
+          <div class="text-center">
+            <div class="spinner-border" role="status">
+              <div class="visually-hidden">Loading...</div>
+            </div>
+          </div>
+          <br>
+
+          <button class="btn btn-primary" type="button" disabled>
+            <div class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></div>
+            <div class="visually-hidden">Loading...</div>
+          </button>
+          <button class="btn btn-primary" type="button" disabled>
+            <div class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></div>
+            Loading...
+          </button> 
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
